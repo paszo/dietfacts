@@ -2,6 +2,12 @@
 
 from odoo import models, fields, api
 
+class Dietfacts_product_template(models.Model):
+    _name = 'product.template'
+    _inherit = 'product.template'
+
+    calories = fields.Integer("Calories")
+
 # class dietfacts(models.Model):
 #     _name = 'dietfacts.dietfacts'
 
