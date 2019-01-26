@@ -11,6 +11,16 @@
           </field>
       </field>
     </record>
+
+    <record model="ir.ui.view" id="dietfacts.sales_list">
+      <field name="inherit_id" ref="product.product_template_tree_view"/>
+      <field name="model">product.template</field>
+      <field name="arch" type="xml">
+          <field name="categ_id" position="after">
+            <field name="calories"/>
+          </field>
+      </field>
+    </record>
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="dietfacts.list">
