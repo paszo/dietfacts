@@ -1,5 +1,16 @@
 <odoo>
   <data>
+
+
+    <record model="ir.ui.view" id="dietfacts.list">
+      <field name="inherit_id" ref="account.product_product_view_tree"/>
+      <field name="model">product.product</field>
+      <field name="arch" type="xml">
+          <field name="taxes_id" position="after">
+            <field name="calories"/>
+          </field>
+      </field>
+    </record>
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="dietfacts.list">
